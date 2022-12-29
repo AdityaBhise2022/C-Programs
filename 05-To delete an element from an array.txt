@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n,pos, a[10];
+clrscr();
+printf("Enter the number of elements :\n");
+scanf("%d",&n);
+printf("Enter element: \n ");
+for(i=0;i<n;i++)
+{
+printf("a[%d]=",i);
+scanf("%d",&a[i]);
+}
+printf("\nEnter the pos from which the no. has to be deleted :");
+scanf("%d",&pos);
+for(i=pos;i<n;i++)
+a[i]=a[i+1];
+n=n-1;
+printf("\n Displar array after deletion: \n ");
+for(i=0;i<n;i++)
+{
+printf("\n a[%d]=%d",i,a[i]);
+}
+getch();
+}

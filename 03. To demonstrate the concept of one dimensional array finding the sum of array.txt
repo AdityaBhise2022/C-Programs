@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n, a[10],s;
+clrscr();
+printf(“Enter the number of element :\n”);
+scanf(“%d”,&n);
+s=0;
+printf(“Enter element:\n”);
+for(i=0;i<n;i++)
+{
+printf(“a[%d]=”,i);
+scanf(“%d”,&a[i]);
+s=s+a[i];
+}
+printf(“Sum of arrary element:%d”,s);
+getch();
+}

@@ -1,0 +1,19 @@
+#include<stdio.h
+#include<conio.h>
+#include<string.h>
+void main()
+{
+char str[20],str1[20];
+int i ;
+clrscr();
+i=0;
+printf("\n Enter string to copy:");
+scanf("%s",&str);
+while(str[i]!='\0')
+{
+str1[i]=str[i];
+i++;
+}
+str1[i]='\0';
+printf("\n The Destination string is:%s",str1);
+getc
